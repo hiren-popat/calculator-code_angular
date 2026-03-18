@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-operators',
@@ -9,4 +9,10 @@ import { Component, Input } from '@angular/core';
 })
 export class Operators {
   @Input() displayOperators: string[] = [];
+
+  @Output() operatorClicked = new EventEmitter<string>()
+
+  onOperatorClick(op: string) {
+    this.operatorClicked.emit(op);
+  };
 }

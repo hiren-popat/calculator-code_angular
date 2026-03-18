@@ -1,3 +1,7 @@
-<ng-container *ngFor="let op of displayOperators">
+<!-- <ng-container *ngFor="let op of displayOperators">
     <button>{{ op }}</button>
-</ng-container>
+</ng-container> -->
+
+<button *ngFor="let op of displayOperators" class="number-btn" (click)="onOperatorClick(op)">
+    {{ op }}
+</button>

@@ -1,7 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Number } from './number/number';
 import { Operators } from './operators/operators';
 import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-button',
@@ -10,4 +11,15 @@ import { CommonModule } from '@angular/common';
   styleUrl: './button.css',
 })
 export class Button {
+
+  @Output() numberClicked = new EventEmitter<string>();;
+  @Output() operatorClicked = new EventEmitter<string>();
+
+  onNumber(num: string) {
+    this.numberClicked.emit(num);
+  }
+
+  onOperator(op: string) {
+    this.operatorClicked.emit(op);
+  }
 }

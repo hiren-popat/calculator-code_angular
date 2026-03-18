@@ -1,3 +1,3 @@
-<ng-container *ngFor="let num of displayNumbers">
-    <button class="number-btn">{{ num }}</button>
-</ng-container>
+<button *ngFor="let num of displayNumbers" class="number-btn" (click)="onNumberClick(num)">
+    {{ num }}
+</button>

@@ -7,5 +7,5 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrl: './result.css',
 })
 export class Result {
-  @Input() result!: string;
+  @Input() value: string = '';
 }

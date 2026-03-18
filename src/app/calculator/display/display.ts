@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Result } from './result/result';
 import { History } from './history/history';
 
@@ -9,5 +9,7 @@ import { History } from './history/history';
   styleUrl: './display.css',
 })
 export class Display {
+  @Input() history: string = '';
+  @Input() result: string = '';
 
 }
