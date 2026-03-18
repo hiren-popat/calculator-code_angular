@@ -1,0 +1,43 @@
+<!-- <div class="buttons">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button class="operator">/</button>
+
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button class="operator">*</button>
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button class="operator">-</button>
+
+    <button>0</button>
+    <button class="clear">C</button>
+    <button class="equal">=</button>
+    <button class="operator">+</button>
+
+
+    <app-number></app-number>
+    <app-operators></app-operators>
+</div> -->
+
+<div class="buttons">
+
+    <app-number [displayNumbers]="['7', '8', '9']"></app-number>
+    <app-operators [displayOperators]="['/']"></app-operators>
+
+
+    <app-number [displayNumbers]="['4', '5', '6']"></app-number>
+    <app-operators [displayOperators]="['*']"></app-operators>
+
+
+    <app-number [displayNumbers]="['1', '2', '3']"></app-number>
+    <app-operators [displayOperators]="['-']"></app-operators>
+
+
+    <app-number [displayNumbers]="['0']"></app-number>
+    <app-operators [displayOperators]="['C', '=', '+']"></app-operators>
+</div>

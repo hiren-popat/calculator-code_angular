@@ -1,0 +1,17 @@
+.number-btn {
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #e0e0e0;
+}
+
+.number-btn:hover {
+    background: #f8eaea;
+}
+
+.number-btn:active {
+    transform: scale(0.95);
+}
