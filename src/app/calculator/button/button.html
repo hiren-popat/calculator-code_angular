@@ -38,6 +38,7 @@
     <app-operators [displayOperators]="['-']" (operatorClicked)="onOperator($event)"></app-operators>
 
 
-    <app-number [displayNumbers]="['0']" (numberClicked)="onNumber($event)"></app-number>
-    <app-operators [displayOperators]="['C', '=', '+']" (operatorClicked)="onOperator($event)"></app-operators>
+    <app-number [displayNumbers]="['0','.']" (numberClicked)="onNumber($event)"></app-number>
+    <app-operators [displayOperators]="['%', '+']" (operatorClicked)="onOperator($event)"></app-operators>
+    <app-operators [displayOperators]="['=', 'D', 'C', '']" (operatorClicked)="onOperator($event)"></app-operators>
 </div>

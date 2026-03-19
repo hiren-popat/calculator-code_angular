@@ -5,8 +5,10 @@
     <!-- <app-display></app-display>
     <app-button></app-button> -->
 
-    <app-display [history]="historySignal()" [result]="currentInputSignal()">
+    <app-display [history]="historySignal()" [result]="currentInputSignal()" [previous]="previousInputSignal()">
     </app-display>
     <app-button (numberClicked)="handleNumber($event)" (operatorClicked)="handleOperator($event)">
     </app-button>
+
+
 </div>

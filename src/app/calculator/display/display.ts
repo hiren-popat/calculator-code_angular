@@ -11,5 +11,8 @@ import { History } from './history/history';
 export class Display {
   @Input() history: string = '';
   @Input() result: string = '';
+  @Input() previous: string = ''
+  @Input() error: string = '';
+
 
 }

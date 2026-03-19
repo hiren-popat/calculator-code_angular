@@ -3,4 +3,8 @@
     padding: 15px;
     margin-bottom: 15px;
     background: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    /* single line */
+    /* text-overflow: ellipsis; */
 }
